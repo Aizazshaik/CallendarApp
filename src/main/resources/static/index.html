@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Calendar Widget</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="calendar-widget">
+    <div class="month-navigation">
+        <button id="prev-month">&lt;</button>
+        <h2 id="current-month-year"></h2>
+        <button id="next-month">&gt;</button>
+    </div>
+    <div class="calendar-grid-container">
+        <div class="calendar-month-view">
+            <div class="month-title" id="prev-month-title"></div>
+            <div id="prev-month-grid" class="calendar-grid"></div>
+        </div>
+        <div class="calendar-month-view">
+            <div class="month-title" id="current-month-title"></div>
+            <div id="current-month-grid" class="calendar-grid"></div>
+        </div>
+        <div class="calendar-month-view">
+            <div class="month-title" id="next-month-title"></div>
+            <div id="next-month-grid" class="calendar-grid"></div>
+        </div>
+    </div>
+    <div class="holiday-legend">
+        <span class="legend-item holiday-regular">Regular Holiday</span>
+        <span class="legend-item holiday-work">Work Holiday</span>
+        <span class="legend-item week-single-work-holiday">Week with 1 Work Holiday</span>
+        <span class="legend-item week-multiple-work-holidays">Week with &gt;1 Work Holiday</span>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
